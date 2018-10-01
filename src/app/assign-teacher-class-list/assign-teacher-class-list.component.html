@@ -1,0 +1,56 @@
+
+<div id="navbar" >
+  <a class="javascript:void(0)"  routerLinkActive="active"   [routerLink]="['/admindashboard']">Home</a>
+  <a href="active" href="javascript:void(0)"  routerLinkActive="active" [routerLink]="['/admin/teacherlist']" >Contact</a>
+  <a href="javascript:void(0)" >Logout </a>
+
+</div>
+<H1> Alekta Pre School    </H1>
+
+<div class="cus">
+<div class="total">
+  <h1 class="h"> Add NEW  Teacher   </h1>
+        </div>
+
+<div class="sa">
+<button class="button" [routerLink]="['/addteacher']">ADD  TEACHER</button>
+</div>
+<br>
+<table id="customers">
+
+<tr>
+<th>School_Id</th>
+
+<th>Teacher_Id</th>
+<th>Class</th>
+<th>Section</th>
+<th>Subject</th>
+
+
+
+<th>EDIT</th></tr>
+<tr *ngFor="let teachers of teacher" >
+<td>{{teachers.School_Id}}</td>
+
+<td>{{teachers.Teacher_Id}}</td>
+<td>{{teachers.Class}}</td>
+<td>{{teachers.Section}}</td>
+<td>{{teachers.Subject}}</td>
+
+
+<td id="edit"><a [routerLink]="['/admin/teacherlist/edit',teachers._id]">EDIT</a></td>
+
+
+
+
+
+
+
+</tr>
+
+
+
+
+
+</table>
+</div>

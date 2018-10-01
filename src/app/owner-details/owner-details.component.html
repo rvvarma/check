@@ -1,0 +1,77 @@
+
+<H1> Alekta Pre School    </H1>
+<br>
+
+<div class="total">
+  <h2>Registration Form</h2>
+  <div class="row">
+    <div class="col-75">
+      <div class="one">
+        <div class="container">
+         <form #f = "ngForm" (ngSubmit) = "onSubmit(f.value)">
+
+          <div class="row">
+            <div class="col-50">
+              <h3>Owner Details</h3>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder=" First Name " ngModel>
+              <label for="fname"> Last Name</label>
+              <input type="text" id="fname" name="firstname" placeholder=" Last Name " ngModel>
+              <label for="email"> Email</label>
+              <input type="text" id="email" name="email" placeholder="xxx@example.com" ngModel>
+              <label>Gender</label>
+                <label>
+                <input type="radio" value="male" name="gender" ngModel>
+                Male
+
+                <input type="radio" value="female" name="gender"  ngModel>
+                 Female
+               </label><br>
+               <div class="form-group">
+                 <label for="dateOfBirth">Date of Birth</label>
+                 <input id="dateOfBirth" name="dateOfBirth" [(ngModel)]="dateOfBirth"
+                 type="date" class="form-control">
+               </div>
+               Phone Number:<input type="text" name="Phone_Number"  ngModel><br><br>
+
+              <div class="row">
+                <div class="col-50">
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-50">
+              <h3>School Details</h3>
+              <label for="fname"></label>
+
+              <label for="cname">School Name </label>
+              <input type="text" id="cname" name="cardname" placeholder="School Name " ngModel>
+            
+
+              <label for="adr"> Scool Address 1</label>
+              <input type="text" id="adr" name="address" placeholder=" School Address 1"   ngModel>
+              <label for="adr">School Address 2</label>
+              <input type="text" id="adr" name="address" placeholder=" School Address 2" ngModel>
+              <div class="row">
+                 <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="State" ngModel>
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001"ngModel>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <input type="submit" value="Submitt" class="btn" >
+        </form>
+      </div>
+    </div>
+</div>
+</div>
+</div>
